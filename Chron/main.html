@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>История языков программирования</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+</head>
+<body>
+
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 800, 
+    easing: 'ease-in-out',
+    once: true,   
+  });
+</script>
+
+    <header>
+        <h1>История языков программирования</h1>
+        <p>От машинного кода до современных языков программирования</p>
+    </header>
+
+    <div class="filter-buttons">
+        <button data-filter="all" class="active">Все</button>
+        <button data-filter="50-70">1950–1970</button>
+        <button data-filter="80-90">1980–1990</button>
+        <button data-filter="90-2000">1990–2000</button>
+        <button data-filter="2010+">2000+</button>
+      </div>
+
+    <div class="timeline" id="timeline">
+
+        <div class="container left" data-period="50-70">
+          <div class="content">
+            <h2>1957 — Fortran</h2>
+            <img src="images/Fortran_logo.svg.png" alt="Fortran Logo" class="icon" />
+            <p>Один из первых языков высокого уровня, разработан для научных расчетов.</p>
+            <details>
+              <summary>Пример кода</summary>
+              <pre>PRINT *, 'Hello, world!'</pre>
+            </details>
+            <a href="https://fortran-lang.org/" target="_blank" rel="noopener">Официальный сайт</a>
+          </div>
+        </div>
+      
+        <div class="container right" data-period="50-70">
+          <div class="content">
+            <h2>1958 — Lisp</h2>
+            <img src="images/Lisp_logo.svg.png" alt="Lisp Logo" class="icon" />
+            <p>Язык для обработки списков, популярный в исследованиях ИИ.</p>
+            <details>
+              <summary>Пример кода</summary>
+              <pre>(print "Hello, world!")</pre>
+            </details>
+            <a href="https://common-lisp.net/" target="_blank" rel="noopener">Официальный сайт</a>
+          </div>
+        </div>
+      
+        <div class="container left" data-period="50-70">
+          <div class="content">
+            <h2>1970 — Pascal</h2>
+            <img src="images/Pascal_logo.jpg" alt="Lisp Logo" class="icon" />
+            <p>Учебный язык с сильной типизацией, использовался для обучения структурному программированию.</p>
+            <details>
+              <summary>Пример кода</summary>
+              <pre>program HelloWorld;
+      begin
+        writeln('Hello, world!');
+      end.</pre>
+            </details>
+            <a href="https://en.wikipedia.org/wiki/Pascal_(programming_language)" target="_blank" rel="noopener">Подробнее</a>
+          </div>
+        </div>
+      
+        <div class="container right" data-period="80-90">
+          <div class="content">
+            <h2>1980 — Ada</h2>
+            <img src="images/Ada_horizon_green_logo_with_slogan.svg.png" alt="Lisp Logo" class="icon" />
+            <p>Язык с сильной типизацией для систем с высокими требованиями надежности (авиация, космос).</p>
+            <details>
+              <summary>Пример кода</summary>
+              <pre>with Ada.Text_IO; use Ada.Text_IO;
+      procedure Hello is
+      begin
+        Put_Line("Hello, world!");
+      end Hello;</pre>
+            </details>
+            <a href="https://en.wikipedia.org/wiki/Ada_(programming_language)" target="_blank" rel="noopener">Подробнее</a>
+          </div>
+        </div>
+      
+        <div class="container left" data-period="80-90">
+          <div class="content">
+            <h2>1983 — C++</h2>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/1/18/ISO_C%2B%2B_Logo.svg" alt="C++ Logo" class="icon" />
+            <p>Объектно-ориентированный язык, расширение C.</p>
+            <details>
+              <summary>Пример кода</summary>
+              <pre>#include &lt;iostream&gt;
+      int main() {
+        std::cout << "Hello, world!" << std::endl;
+        return 0;
+      }</pre>
+            </details>
+            <a href="https://isocpp.org/" target="_blank" rel="noopener">Официальный сайт</a>
+          </div>
+        </div>
+      
+        <div class="container right" data-period="90-2000">
+          <div class="content">
+            <h2>1991 — Python</h2>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg" alt="Python Logo" class="icon" />
+            <p>Универсальный язык с простой синтаксисом, популярен в науке, веб-разработке и AI.</p>
+            <details>
+              <summary>Пример кода</summary>
+              <pre>print("Hello, world!")</pre>
+            </details>
+            <a href="https://www.python.org/" target="_blank" rel="noopener">Официальный сайт</a>
+          </div>
+        </div>
+      
+        <div class="container left" data-period="90-2000">
+          <div class="content">
+            <h2>1995 — Java</h2>
+            <img src="https://upload.wikimedia.org/wikipedia/en/3/30/Java_programming_language_logo.svg" alt="Java Logo" class="icon" />
+            <p>Платформонезависимый язык для корпоративных и мобильных приложений.</p>
+            <details>
+              <summary>Пример кода</summary>
+              <pre>public class Main {
+        public static void main(String[] args) {
+          System.out.println("Hello, world!");
+        }
+      }</pre>
+            </details>
+            <a href="https://www.oracle.com/java/" target="_blank" rel="noopener">Официальный сайт</a>
+          </div>
+        </div>
+      
+        <div class="container right" data-period="90-2000">
+          <div class="content">
+            <h2>1995 — PHP</h2>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/2/27/PHP-logo.svg" alt="PHP Logo" class="icon" />
+            <p>Язык для создания динамических веб-страниц, широко используется для серверной части.</p>
+            <details>
+              <summary>Пример кода</summary>
+              <pre>&lt;?php
+      echo 'Hello, world!';
+      ?&gt;</pre>
+            </details>
+            <a href="https://www.php.net/" target="_blank" rel="noopener">Официальный сайт</a>
+          </div>
+        </div>
+      
+        <div class="container left" data-period="90-2000">
+          <div class="content">
+            <h2>1995 — Ruby</h2>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/7/73/Ruby_logo.svg" alt="Ruby Logo" class="icon" />
+            <p>Язык с упором на простоту и продуктивность, известен благодаря фреймворку Rails.</p>
+            <details>
+              <summary>Пример кода</summary>
+              <pre>puts 'Hello, world!'</pre>
+            </details>
+            <a href="https://www.ruby-lang.org/" target="_blank" rel="noopener">Официальный сайт</a>
+          </div>
+        </div>
+      
+        <div class="container right" data-period="90-2000">
+          <div class="content">
+            <h2>1995 — JavaScript</h2>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" alt="JavaScript Logo" class="icon" />
+            <p>Основной язык веб-разработки, работает в браузерах.</p>
+            <details>
+              <summary>Пример кода</summary>
+              <pre>console.log('Hello, world!');</pre>
+            </details>
+            <a href="https://developer.mozilla.org/ru/docs/Web/JavaScript" target="_blank" rel="noopener">Документация</a>
+          </div>
+        </div>
+      
+        <div class="container left" data-period="2010+">
+          <div class="content">
+            <h2>2009 — Go</h2>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Go_Logo_Blue.svg" alt="Go Logo" class="icon" />
+            <p>Язык от Google с упором на простоту и параллелизм.</p>
+            <details>
+              <summary>Пример кода</summary>
+              <pre>package main
+      import "fmt"
+      func main() {
+        fmt.Println("Hello, world!")
+      }</pre>
+            </details>
+            <a href="https://golang.org/" target="_blank" rel="noopener">Официальный сайт</a>
+          </div>
+        </div>
+      
+        <div class="container right" data-period="2010+">
+          <div class="content">
+            <h2>2010 — Rust</h2>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Rust_programming_language_black_logo.svg" alt="Rust Logo" class="icon" />
+            <p>Безопасный и быстрый системный язык с управлением памятью без сборщика мусора.</p>
+            <details>
+              <summary>Пример кода</summary>
+              <pre>fn main() {
+        println!("Hello, world!");
+      }</pre>
+            </details>
+            <a href="https://www.rust-lang.org/" target="_blank" rel="noopener">Официальный сайт</a>
+          </div>
+        </div>
+      
+        <div class="container left" data-period="2010+">
+          <div class="content">
+            <h2>2011 — Kotlin</h2>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/7/74/Kotlin_Icon.png" alt="Kotlin Logo" class="icon" />
+            <p>Современный язык для JVM и Android, совместим с Java, улучшает удобство и безопасность кода.</p>
+            <details>
+              <summary>Пример кода</summary>
+              <pre>fun main() {
+        println("Hello, world!")
+      }</pre>
+            </details>
+            <a href="https://kotlinlang.org/" target="_blank" rel="noopener">Официальный сайт</a>
+          </div>
+        </div>
+      
+      </div>
+      
+      <section class="compare">
+        <h2>Сравнение языков</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Язык</th>
+                    <th>Год</th>
+                    <th>Типизация</th>
+                    <th>Популярность</th>
+                    <th>Основное применение</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>Fortran</td><td>1957</td><td>Статическая</td><td>★★★☆☆</td><td>Научные вычисления</td></tr>
+                <tr><td>Lisp</td><td>1958</td><td>Динамическая</td><td>★★★☆☆</td><td>Искусственный интеллект</td></tr>
+                <tr><td>Pascal</td><td>1970</td><td>Статическая</td><td>★★☆☆☆</td><td>Обучение программированию</td></tr>
+                <tr><td>Ada</td><td>1980</td><td>Статическая</td><td>★★☆☆☆</td><td>Системы реального времени</td></tr>
+                <tr><td>C++</td><td>1983</td><td>Статическая</td><td>★★★★☆</td><td>Системное и прикладное ПО</td></tr>
+                <tr><td>Python</td><td>1991</td><td>Динамическая</td><td>★★★★★</td><td>AI, скрипты, web</td></tr>
+                <tr><td>Java</td><td>1995</td><td>Статическая</td><td>★★★★☆</td><td>Корпоративные приложения</td></tr>
+                <tr><td>PHP</td><td>1995</td><td>Динамическая</td><td>★★★☆☆</td><td>Web-сервер</td></tr>
+                <tr><td>Ruby</td><td>1995</td><td>Динамическая</td><td>★★★☆☆</td><td>Web-фреймворки (Rails)</td></tr>
+                <tr><td>JavaScript</td><td>1995</td><td>Динамическая</td><td>★★★★★</td><td>Web-фронтенд</td></tr>
+                <tr><td>Go</td><td>2009</td><td>Статическая</td><td>★★★☆☆</td><td>Серверное и сетевое ПО</td></tr>
+                <tr><td>Rust</td><td>2010</td><td>Статическая</td><td>★★★★☆</td><td>Системное ПО</td></tr>
+                <tr><td>Kotlin</td><td>2011</td><td>Статическая</td><td>★★★☆☆</td><td>Android, backend</td></tr>
+            </tbody>
+        </table>
+    </section>
+    
+
+    <footer>
+        <p>Источники: Wikipedia, официальные сайты языков, GitHub.</p>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
